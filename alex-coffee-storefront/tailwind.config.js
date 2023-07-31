@@ -5,10 +5,17 @@ module.exports = {
     "./src/modules/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     extend: {
       transitionProperty: {
         "width": "width",
         "spacing": 'margin, padding',
+      },
+      colors: {
+        'alex-dark-blue': '#01708C',
+        'alex-blue': '#0098C1',
+        'alex-gold': '#B87817',
+        'alex-yellow': '#E6D7B2',
       },
       maxWidth: {
         "8xl": "100rem",
