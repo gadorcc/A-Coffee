@@ -1,37 +1,46 @@
-
-import UnderlineLink from "@modules/common/components/underline-link"
-import Image from "next/image"
+// 'use client'
+import React from "react";
+import { Carousel } from "flowbite-react";
+import UnderlineLink from "@modules/common/components/underline-link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
 
-    <div className="h-[90vh] w-full relative">
-      <div className="text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
-        <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black">
-          Alex Blend
-        </h1>
-        <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
-          Last Alex coffee blend, beans or ground for your favorite brewing method.
-        </p>
-
-        <UnderlineLink href="/store">Buy Coffee</UnderlineLink>
-      </div>
-      <Image
-        src="/hero.jpg"
-        loading="eager"
-        priority={true}
-        quality={90}
-        alt="Photo by @Alex-Coffee"
-        className="absolute inset-0"
-        draggable="false"
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-        }}
-      />
-    </div>
-  )
-}
-
-export default Hero
+      <div className="bg-black fill">
+            <section className="container items-center px-4 pb-12 mx-auto mt-20 lg:flex md:px-40">
+                <div className="flex-1 space-y-4 sm:text-center lg:text-left">
+                    <h1 className="text-4xl font-bold text-yellow-500">
+                        Happy halloween
+                    </h1>
+                    <p className="max-w-xl leading-relaxed text-gray-300 sm:mx-auto lg:ml-0">
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                    </p>
+                    <div className="items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
+                        <a
+                            href="javascript:void(0)"
+                            className="block px-6 py-2 text-center text-white bg-yellow-600 rounded-md"
+                        >
+                            Buy Now
+                        </a>
+                        <a
+                            href="javascript:void(0)"
+                            className="block px-6 py-2 text-center text-gray-500 bg-white rounded-md"
+                        >
+                            See More
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.pixabay.com/photo/2022/09/29/17/15/halloween-7487706__340.jpg"
+                        className="w-full mx-auto mt-6 sm:w-10/12 lg:w-full"
+                    />
+                </div>
+            </section>
+        </div>
+  );
+ }
+export default Hero;
