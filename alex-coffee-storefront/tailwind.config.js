@@ -15,7 +15,7 @@ module.exports = {
         "spacing": 'margin, padding',
       },
       colors: {
-        'alex-dark-blue': '#01708C',
+        'alex-dark-blue': '#024552',
         'alex-blue': '#0098C1',
         'alex-gold': '#B87817',
         'alex-yellow': '#E6D7B2',
