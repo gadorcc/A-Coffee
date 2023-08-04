@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-import { Button } from 'flowbite-react';
 import UnderlineLink from "@modules/common/components/underline-link";
 import Image from "next/image";
 
@@ -15,7 +14,10 @@ const Hero = () => {
             From wholebeans to ground to your favorite brewing method.
           </p>
           <div className="mt-6">
-            <UnderlineLink href="/store">Explore Alex Coffee options</UnderlineLink>
+            <UnderlineLink href="/store">Browse Coffee Options</UnderlineLink>
+          </div>
+          <div className="mt-6">
+            <UnderlineLink href="/store">Subscribe & Save</UnderlineLink>
           </div>
         </div>
 
